@@ -20,3 +20,4 @@ publish/
             
 
 /obj
+*.cache
