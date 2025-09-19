@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("2025-GCHS-Bazaar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1385c6b3412196e2bfa82d6b7cacc4d8c5617ed7")]
 [assembly: System.Reflection.AssemblyProductAttribute("2025-GCHS-Bazaar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("2025-GCHS-Bazaar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
