@@ -7,6 +7,8 @@ TestResults/
 *.vspscc
 bin/
 obj/
+*.cache
+*.json
 packages/
 *.nupkg
 project.lock.json
@@ -17,7 +19,3 @@ publish/
 *.cache
 *.bak
 *.old
-            
-
-/obj
-*.cache
