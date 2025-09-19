@@ -1,1 +1,21 @@
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+TestResults/
+*.log
+*.vspscc
+bin/
+obj/
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+.vs/
+publish/
+*.tmp
+*.cache
+*.bak
+*.old
+            
 
