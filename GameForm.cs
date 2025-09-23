@@ -50,11 +50,9 @@ namespace GCHS_2025_Bazaar
             choiceA.Text = "Pick up the key";
             choiceB.Text = "Leave it";
 
-            // Remove existing event handlers
             choiceA.Click -= ChoiceA_Click;
             choiceB.Click -= ChoiceB_Click;
 
-            // Add new ones
             choiceA.Click += (s, ev) =>
             {
                 sceneLabel.Text = "You picked up the key. You feel a little safer.";
@@ -77,10 +75,9 @@ namespace GCHS_2025_Bazaar
             choiceB.Visible = false;
         }
 
-        // Add this method to your GameForm class to resolve CS0103 for InitializeComponent
         private void InitializeComponent()
         {
-            // No designer code to initialize, so this is intentionally left empty.
+
         }
     }
 }
