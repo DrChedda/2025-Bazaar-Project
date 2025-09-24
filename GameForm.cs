@@ -39,11 +39,9 @@ namespace GCHS_2025_Bazaar
 
             this.Load += (s, e) =>
             {
-                // Center the label at the top
                 sceneLabel.Left = (this.ClientSize.Width - sceneLabel.Width) / 2;
                 sceneLabel.Top = 50;
 
-                // Center the buttons horizontally, spaced apart
                 int spacing = 40;
                 int totalWidth = choiceA.Width + spacing + choiceB.Width;
                 int startX = (this.ClientSize.Width - totalWidth) / 2;
