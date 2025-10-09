@@ -18,7 +18,7 @@ namespace GCHS_2025_Bazaar
         }
         private void GameMenu_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Control && e.KeyCode == Keys.S)
+            if (e.Control && e.Shift && e.KeyCode == Keys.S)
             {
                 Process.GetCurrentProcess().Kill();
             }
