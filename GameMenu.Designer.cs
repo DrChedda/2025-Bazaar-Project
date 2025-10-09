@@ -35,28 +35,28 @@
             // 
             // startBtn
             // 
-            startBtn.Location = new Point(12, 177);
+            startBtn.Location = new Point(12, 576);
             startBtn.Name = "startBtn";
-            startBtn.Size = new Size(309, 38);
+            startBtn.Size = new Size(400, 100);
             startBtn.TabIndex = 0;
             startBtn.Text = "Start";
             startBtn.UseVisualStyleBackColor = true;
-            startBtn.Click += new EventHandler(this.startBtn_Click);
+            startBtn.Click += startBtn_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(12, 245);
+            button2.Location = new Point(12, 864);
             button2.Name = "button2";
-            button2.Size = new Size(309, 38);
+            button2.Size = new Size(400, 100);
             button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(12, 319);
+            button3.Location = new Point(12, 1152);
             button3.Name = "button3";
-            button3.Size = new Size(309, 38);
+            button3.Size = new Size(400, 100);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
@@ -65,14 +65,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(2560, 1440);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(startBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GameMenu";
+            KeyDown += GameMenu_KeyDown;
             ResumeLayout(false);
-            this.KeyDown += new KeyEventHandler(this.GameMenu_KeyDown);
         }
 
         #endregion
