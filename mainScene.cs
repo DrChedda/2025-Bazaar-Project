@@ -9,25 +9,20 @@ using System.Windows.Forms;
 
 namespace GCHS_2025_Bazaar
 {
-    public partial class GameMenu : Form
+    public partial class MainScene : Form
     {
-        public GameMenu()
+        public MainScene()
         {
             InitializeComponent();
             this.KeyPreview = true;
         }
-        private void GameMenu_KeyDown(object sender, KeyEventArgs e)
+        private void MainScene_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && e.Shift && e.KeyCode == Keys.S)
             {
                 Process.GetCurrentProcess().Kill();
             }
         }
-        private void startBtn_Click(object sender, EventArgs e)
-        {
-            introductionScene introductionScene = new introductionScene();
-            this.Hide();
-            introductionScene.Show();
-        }
+
     }
 }

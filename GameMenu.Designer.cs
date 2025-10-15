@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            startBtn = new Button();
             button2 = new Button();
             button3 = new Button();
+            startBtn = new Button();
             SuspendLayout();
-            // 
-            // startBtn
-            // 
-            startBtn.Location = new Point(12, 576);
-            startBtn.Name = "startBtn";
-            startBtn.Size = new Size(400, 100);
-            startBtn.TabIndex = 0;
-            startBtn.Text = "Start";
-            startBtn.UseVisualStyleBackColor = true;
-            startBtn.Click += startBtn_Click;
             // 
             // button2
             // 
@@ -61,6 +51,19 @@
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
+            // startBtn
+            // 
+            startBtn.BackColor = Color.Transparent;
+            startBtn.BackgroundImageLayout = ImageLayout.Center;
+            startBtn.Cursor = Cursors.Hand;
+            startBtn.Image = Properties.Resources.button2;
+            startBtn.Location = new Point(13, 569);
+            startBtn.Name = "startBtn";
+            startBtn.Size = new Size(414, 107);
+            startBtn.TabIndex = 0;
+            startBtn.UseVisualStyleBackColor = false;
+            startBtn.Click += startBtn_Click;
+            // 
             // GameMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -71,13 +74,14 @@
             Controls.Add(startBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GameMenu";
+            WindowState = FormWindowState.Maximized;
             KeyDown += GameMenu_KeyDown;
             ResumeLayout(false);
         }
 
         #endregion
-        private Button startBtn;
         private Button button2;
         private Button button3;
+        private Button startBtn;
     }
 }

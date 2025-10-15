@@ -9,25 +9,33 @@ using System.Windows.Forms;
 
 namespace GCHS_2025_Bazaar
 {
-    public partial class GameMenu : Form
+    public partial class introductionScene : Form
     {
-        public GameMenu()
+        public introductionScene()
         {
             InitializeComponent();
             this.KeyPreview = true;
+            Introduction();
         }
-        private void GameMenu_KeyDown(object sender, KeyEventArgs e)
+        private void IntroductionScene_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && e.Shift && e.KeyCode == Keys.S)
             {
                 Process.GetCurrentProcess().Kill();
             }
         }
-        private void startBtn_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            introductionScene introductionScene = new introductionScene();
+            MainScene mainScene = new MainScene();
             this.Hide();
-            introductionScene.Show();
+            mainScene.Show();
+        }
+
+        private void Introduction()
+        {
+            introText.Text = "This is working!!!!!!!!!";
+            introText.Location = new Point(118, 408);
         }
     }
 }
