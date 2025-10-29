@@ -28,35 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button2 = new Button();
-            button3 = new Button();
+            creditsBtn = new Button();
             startBtn = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button2
+            // creditsBtn
             // 
-            button2.Location = new Point(12, 864);
-            button2.Name = "button2";
-            button2.Size = new Size(400, 100);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(12, 1152);
-            button3.Name = "button3";
-            button3.Size = new Size(400, 100);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            creditsBtn.Location = new Point(12, 864);
+            creditsBtn.Name = "creditsBtn";
+            creditsBtn.Size = new Size(400, 100);
+            creditsBtn.TabIndex = 1;
+            creditsBtn.Text = "Credits";
+            creditsBtn.UseVisualStyleBackColor = true;
+            creditsBtn.Click += creditsBtn_Click;
             // 
             // startBtn
             // 
             startBtn.BackColor = Color.Transparent;
             startBtn.BackgroundImageLayout = ImageLayout.Center;
             startBtn.Cursor = Cursors.Hand;
-            startBtn.Image = Properties.Resources.button2;
+            startBtn.Image = Properties.Resources.Button;
             startBtn.Location = new Point(13, 569);
             startBtn.Name = "startBtn";
             startBtn.Size = new Size(414, 107);
@@ -64,24 +57,34 @@
             startBtn.UseVisualStyleBackColor = false;
             startBtn.Click += startBtn_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.background;
+            pictureBox1.Location = new Point(2, -7);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1795, 1031);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // GameMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2560, 1440);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(creditsBtn);
             Controls.Add(startBtn);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GameMenu";
             WindowState = FormWindowState.Maximized;
             KeyDown += GameMenu_KeyDown;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private Button button2;
-        private Button button3;
+        private Button creditsBtn;
         private Button startBtn;
+        private PictureBox pictureBox1;
     }
 }

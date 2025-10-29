@@ -29,5 +29,10 @@ namespace GCHS_2025_Bazaar
             this.Hide();
             introductionScene.Show();
         }
+
+        private void creditsBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
